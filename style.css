@@ -5,12 +5,12 @@
    padding: 0;
 }
 
-/* apply background colour to whole page */
+/* Apply background colour to whole page */
 body {
     background-color: paleturquoise;
 }
 
-/*  make the container use flex box to arrange its childer */
+/*  Make the container use flex box to arrange its childer */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +33,7 @@ body {
     height: 10dvh;
 }
 
+/*  */
 .displayRow {
     margin: 0;
     display: flex;
@@ -40,4 +41,33 @@ body {
     padding: 1%;
 }
 
-/* timestamp 53:36 */
+/* All columns inside the formRow will have a spacing and a default size */
+.formRow > .column {
+    width: 50dvw;
+    padding: 1dvw;
+    margin: 0;
+}
+
+/* All Trello columns have default width and height, but expand to fit all cards inside them */
+.trelloColumn {
+    width: 33%;
+    background-color: grey;
+    min-height: 80%;
+    height: max-content;
+    margin: 1%;
+}
+
+/* All Trello cards style, even the one in the preview section */
+.trelloCard {
+    background-color: darkgoldenrod;
+    width: 90%;
+    height: 10dvh;
+    text-align: center;
+    margin: 0;
+}
+
+/* Style for just the card in the preview section */
+#cardPreview {
+    background-color: wheat;
+    
+}
