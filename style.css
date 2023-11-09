@@ -1,0 +1,43 @@
+/* Asterix means "anything" */
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* apply background colour to whole page */
+body {
+    background-color: paleturquoise;
+}
+
+/*  make the container use flex box to arrange its childer */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Make rows as wide as the screen */
+.row {
+    /* disaply view window = dvw, which is better preformance on phones */
+    width: 100dvw;
+    padding: 2dvw;
+
+}
+
+/* Make the form row show its form columns side by side */
+.formRow {
+    width: 100dvw;
+    margin: 0;
+    display: flex;
+    height: 10dvh;
+}
+
+.displayRow {
+    margin: 0;
+    display: flex;
+    height: 75dvh;
+    padding: 1%;
+}
+
+/* timestamp 53:36 */
